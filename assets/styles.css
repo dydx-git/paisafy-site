@@ -146,8 +146,9 @@ section { padding: 64px 0; }
   border-radius: var(--radius); padding: 40px; box-shadow: var(--shadow); }
 .privacy-band ul { margin: 18px 0 0; padding-left: 0; list-style: none;
   display: grid; gap: 14px; }
-.privacy-band li { display: flex; gap: 12px; align-items: flex-start; }
-.privacy-band li::before { content: "✓"; color: var(--green); font-weight: 800; flex: none; }
+.privacy-band li { position: relative; padding-left: 30px; }
+.privacy-band li::before { content: "✓"; color: var(--green); font-weight: 800;
+  position: absolute; left: 0; top: 0; }
 
 /* ---- doc pages (privacy / faq) ---- */
 .doc { padding: 56px 0 80px; }
