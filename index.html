@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paisafy — a privacy-first personal finance tracker</title>
+  <meta name="description" content="Paisafy is a privacy-first personal finance tracker for Android and iOS. Track expenses, budgets, bills and goals — your data stays on your phone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="spark">✨</span> Paisafy</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">✨ Privacy-first · Android &amp; iOS</span>
+      <h1>Money, made calm.</h1>
+      <p class="lead">Paisafy is a personal finance tracker that keeps your data on your phone.
+        Track expenses, income and transfers across multi-currency accounts; set budgets,
+        goals and bills; and let on-device-friendly AI turn receipts and notifications into clean transactions.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#screens">See it in action</a>
+        <a class="btn btn-ghost" href="privacy.html">How we handle your data</a>
+      </div>
+      <div class="signal">
+        <span><i class="dot income"></i> Income is green</span>
+        <span><i class="dot expense"></i> Expense is red</span>
+        <span><i class="dot transfer"></i> Transfers are blue</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Everything you track, nothing you leak</h2>
+        <p>A full-featured tracker with a quiet design philosophy: money is the loud signal, and your raw data stays put.</p>
+      </div>
+      <div class="features">
+        <div class="card">
+          <span class="ico">🧾</span>
+          <h3>One form for everything</h3>
+          <p>Expense, income or transfer in a single form. Split a purchase across multiple accounts, with per-field smart defaults that remember your common picks.</p>
+        </div>
+        <div class="card">
+          <span class="ico">📊</span>
+          <h3>Budgets &amp; goals</h3>
+          <p>Per-category budgets with weekly/monthly/yearly periods, carry-forward and rollover. Savings, milestone, spend-cut and surplus goals — each in its own currency.</p>
+        </div>
+        <div class="card">
+          <span class="ico">🏦</span>
+          <h3>Accounts &amp; loans</h3>
+          <p>Checking, savings, cash, credit, investment, loan, mortgage, crypto. Net-worth view with assets vs. liabilities, currency-converted to your default.</p>
+        </div>
+        <div class="card">
+          <span class="ico">🔁</span>
+          <h3>Declared bills</h3>
+          <p>You declare recurring bills — never auto-detected. Payments match by title and category, with a full payment history per bill.</p>
+        </div>
+        <div class="card">
+          <span class="ico">✨</span>
+          <h3>Smart, on-device-friendly AI</h3>
+          <p>Parse receipts, statements and payment notifications into transactions. An offline regex fallback means entry keeps working with no network at all.</p>
+        </div>
+        <div class="card">
+          <span class="ico">🌍</span>
+          <h3>True multi-currency</h3>
+          <p>Every amount carries its own currency with currency-safe math. Cross-currency totals convert through live FX rates, with per-currency subtotals offline.</p>
+        </div>
+        <div class="card">
+          <span class="ico">💡</span>
+          <h3>Smart Overview insights</h3>
+          <p>A carousel of insight cards — backward-looking and forward-looking projections — plus an optional AI analyst built from aggregate figures only.</p>
+        </div>
+        <div class="card">
+          <span class="ico">💾</span>
+          <h3>Your data, your backups</h3>
+          <p>Full JSON export/import. Optional daily backups write to a folder you pick — local storage or your own Google Drive — no sign-in required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="privacy-band">
+    <div class="wrap">
+      <div class="privacy-band">
+        <h2>Privacy isn't a setting. It's the architecture.</h2>
+        <p>Paisafy is offline-first and local-first by design. There's no account to create and no server collecting your records.</p>
+        <ul>
+          <li>Your accounts, transactions, budgets, bills and goals are stored <strong>only on your device</strong>.</li>
+          <li><strong>We collect nothing.</strong> We never sell or share your data, and use none of it for advertising.</li>
+          <li>The AI Overview is built from <strong>aggregate figures only</strong> — no raw transactions, account names, SMS or location leave the device for it.</li>
+          <li>When you use AI parsing, that specific content is processed by Google as a <strong>service provider on your request</strong> — disclosed in full in our policy.</li>
+        </ul>
+        <p style="margin-top:22px"><a class="btn btn-primary" href="privacy.html">Read the privacy policy</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Take a look</h2>
+        <p>Screens from the Android app. The iOS app is a native SwiftUI build over the same shared logic.</p>
+      </div>
+      <div class="shots">
+        <div class="shot"><img src="assets/screenshots/01-transactions.png" alt="Transactions and Smart Overview" loading="lazy" /><span>Transactions &amp; Smart Overview</span></div>
+        <div class="shot"><img src="assets/screenshots/08-all-insights.png" alt="All insights grid" loading="lazy" /><span>All insights</span></div>
+        <div class="shot"><img src="assets/screenshots/02-accounts.png" alt="Accounts" loading="lazy" /><span>Accounts</span></div>
+        <div class="shot"><img src="assets/screenshots/03-budgets.png" alt="Budgets" loading="lazy" /><span>Budgets</span></div>
+        <div class="shot"><img src="assets/screenshots/12-bills.png" alt="Bills" loading="lazy" /><span>Bills</span></div>
+        <div class="shot"><img src="assets/screenshots/11-budgets-goals.png" alt="Goals" loading="lazy" /><span>Goals</span></div>
+        <div class="shot"><img src="assets/screenshots/07-ai-smart-transaction.png" alt="AI smart entry" loading="lazy" /><span>AI smart entry</span></div>
+        <div class="shot"><img src="assets/screenshots/00-welcome.png" alt="Welcome and onboarding" loading="lazy" /><span>Welcome &amp; onboarding</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <a class="brand" href="index.html"><span class="spark">✨</span> Paisafy</a>
+        <p class="muted" style="margin:8px 0 0">A privacy-first finance tracker by Doorway Labs.</p>
+      </div>
+      <div class="links">
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:doorway.labs@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

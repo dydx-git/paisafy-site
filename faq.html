@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Paisafy</title>
+  <meta name="description" content="Frequently asked questions about Paisafy: privacy, offline use, AI, Pro, backups, platforms and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="spark">✨</span> Paisafy</a>
+      <div class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#screens">Screens</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="doc">
+    <div class="wrap">
+      <h1>Frequently asked questions</h1>
+      <p class="updated">Everything about how Paisafy works — privacy, AI, Pro and more.</p>
+
+      <details class="faq-item" open>
+        <summary>Where is my financial data stored?</summary>
+        <div class="body">
+          <p>On your device, and only your device. Your accounts, transactions, transfers, budgets, bills, goals and categories live in a local database on the phone. There is no Paisafy server collecting or syncing your records, and no account to create.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do I need to sign up or create an account?</summary>
+        <div class="body">
+          <p>No. There's no sign-up, no login, and no cloud profile. You install the app and start tracking. Because there's no account, there's also nothing for us to lose.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does Paisafy work offline?</summary>
+        <div class="body">
+          <p>Yes — fully. The app is offline-first. Network access is only used for optional features you choose to use: AI parsing, fetching exchange rates, and saving backups to a cloud folder. Even smart entry has an on-device fallback so it keeps working with no connection.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What does the AI do, and where does my data go?</summary>
+        <div class="body">
+          <p>The AI can parse text, receipts, bank statements and payment notifications into clean transactions, and can generate an analyst-style overview. When you use these features, the relevant content is processed by Google's Gemini models via Firebase AI Logic (Vertex AI), acting as our service provider — solely to perform the task you asked for, and not to train its models.</p>
+          <p>The AI Overview and chat are built from an <strong>aggregate-only snapshot</strong>: no raw transactions, account names, SMS content or location are included. Full details are in the <a href="privacy.html">privacy policy</a>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is Paisafy free? What is Pro?</summary>
+        <div class="body">
+          <p>Core tracking is free and unlimited — accounts, transactions, budgets, goals, and more. <strong>Pro</strong> is a one-time lifetime unlock (a single in-app purchase) that removes the 5-bill limit, enables automatic daily backups, and opens the full insight library and All-Insights grid.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Which platforms is Paisafy on?</summary>
+        <div class="body">
+          <p>Android and iOS. Both apps are native — Jetpack Compose on Android, SwiftUI on iOS — built over one shared logic core, so the money math and behaviour stay identical across platforms.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do backups work?</summary>
+        <div class="body">
+          <p>You can export and import a full JSON backup of all your data at any time. With Pro, automatic daily backups write a dated snapshot to a folder you pick once — local storage or your own Google Drive folder (accessed through the system file picker, so the app never signs in to your Google account). The newest 14 snapshots are kept.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I import bank statements or receipts?</summary>
+        <div class="body">
+          <p>Yes. Import per-account statements as PDF, image or CSV, or share a receipt image to parse and match the payee. A preview shows the row count, date range and transfers before anything is added. Encrypted PDFs are decrypted on-device before processing.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it handle multiple currencies?</summary>
+        <div class="body">
+          <p>Yes. Every account, budget and goal can have its own currency, and amounts carry their currency with currency-safe math. Cross-currency totals convert through live exchange rates, falling back to per-currency subtotals when offline.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I delete my data?</summary>
+        <div class="body">
+          <p>You're always in control. Delete individual records in the app, use the delete-all option in Settings, or simply uninstall — since everything is stored locally, uninstalling removes it. Any backups you exported remain wherever you saved them until you delete them.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I get support?</summary>
+        <div class="body">
+          <p>Email us at <a href="mailto:doorway.labs@gmail.com">doorway.labs@gmail.com</a> and we'll help.</p>
+        </div>
+      </details>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <a class="brand" href="index.html"><span class="spark">✨</span> Paisafy</a>
+        <p class="muted" style="margin:8px 0 0">A privacy-first finance tracker by Doorway Labs.</p>
+      </div>
+      <div class="links">
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:doorway.labs@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
