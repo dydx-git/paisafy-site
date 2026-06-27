@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guide | Paisafy</title>
-  <meta name="description" content="A hands-on guide to Paisafy: set up your accounts, record and organize spending, plan your month with budgets and bills, and reach your goals." />
+  <meta name="description" content="A hands-on, interactive guide to Paisafy: set up your accounts, record and organize spending, plan your month with budgets and bills, and reach your goals." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet" />
@@ -32,7 +32,7 @@
   <main class="doc guide">
     <div class="wrap">
       <h1>Getting started with Paisafy</h1>
-      <p class="updated">A hands-on walkthrough, screen by screen. Follow it in order to set everything up, or jump to the part you need. The numbered pins on each screenshot match the notes beside it.</p>
+      <p class="updated">A hands-on walkthrough, screen by screen. Each screen is an interactive tour: tap the glowing pin, or use <strong>Next</strong>, to step through what every part does. Follow it in order to set everything up, or jump to the part you need.</p>
 
       <div class="gtoc">
         <a href="#j1"><span class="jnum">1</span><h3>Set up your accounts</h3><p>Add your accounts and read your balances and net worth.</p></a>
@@ -48,7 +48,7 @@
           <div><h2>Set up your accounts</h2><p class="jlead">Accounts are the foundation. Once they're in, every balance, budget and insight is built from them.</p></div>
         </div>
 
-        <!-- welcome -->
+        <!-- welcome (no tour) -->
         <div class="gstep">
           <div class="gshots"><div class="gshot"><img src="assets/screenshots/guide/00-welcome.png" alt="Paisafy welcome screen" loading="lazy" /></div></div>
           <div>
@@ -59,20 +59,20 @@
           </div>
         </div>
 
-        <!-- add account (duo) -->
+        <!-- add account (duo, tour) -->
         <div class="gstep rev">
           <div class="gshots duo">
             <div class="gshot">
               <img src="assets/screenshots/guide/09-add-account.png" alt="Choosing an account type" loading="lazy" />
-              <span class="gpin" style="left:27%;top:22%">1</span>
-              <span class="gpin" style="left:23%;top:62%">2</span>
+              <button type="button" class="gpin" style="left:27%;top:22%">1</button>
+              <button type="button" class="gpin" style="left:23%;top:62%">2</button>
             </div>
             <div class="gshot">
               <img src="assets/screenshots/guide/09b-add-account-details.png" alt="Account details" loading="lazy" />
-              <span class="gpin" style="left:50%;top:29%">3</span>
-              <span class="gpin" style="left:28%;top:35%">4</span>
-              <span class="gpin" style="left:23%;top:51%">5</span>
-              <span class="gpin" style="left:24%;top:61%">6</span>
+              <button type="button" class="gpin" style="left:50%;top:29%">3</button>
+              <button type="button" class="gpin" style="left:28%;top:35%">4</button>
+              <button type="button" class="gpin" style="left:23%;top:51%">5</button>
+              <button type="button" class="gpin" style="left:24%;top:61%">6</button>
             </div>
           </div>
           <div>
@@ -87,6 +87,7 @@
               <li><span class="h">Currency.</span> <span class="muted">Each account can have its own; cross-currency totals convert automatically.</span></li>
               <li><span class="h">Starting balance.</span> <span class="muted">Enter what's in it today (a calculator is built in). Savings and loans add an interest-rate step next.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -94,11 +95,11 @@
         <div class="gstep">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/02-accounts.png" alt="Accounts overview" loading="lazy" />
-            <span class="gpin" style="left:27%;top:16%">1</span>
-            <span class="gpin" style="left:26%;top:28%">2</span>
-            <span class="gpin" style="left:50%;top:37%">3</span>
-            <span class="gpin" style="left:32%;top:48%">4</span>
-            <span class="gpin" style="left:85%;top:82%">5</span>
+            <button type="button" class="gpin" style="left:27%;top:16%">1</button>
+            <button type="button" class="gpin" style="left:26%;top:28%">2</button>
+            <button type="button" class="gpin" style="left:50%;top:37%">3</button>
+            <button type="button" class="gpin" style="left:32%;top:48%">4</button>
+            <button type="button" class="gpin" style="left:85%;top:82%">5</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
@@ -111,6 +112,7 @@
               <li><span class="h">Accounts group by type,</span> <span class="muted">each showing its live balance. Tap one for actions.</span></li>
               <li><span class="h">Add another account</span> <span class="muted">any time with the + button.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -118,10 +120,10 @@
         <div class="gstep rev">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/02b-account-actions.png" alt="Per-account actions" loading="lazy" />
-            <span class="gpin" style="left:53%;top:56%">1</span>
-            <span class="gpin" style="left:61%;top:66%">2</span>
-            <span class="gpin" style="left:15%;top:77%">3</span>
-            <span class="gpin" style="left:64%;top:77%">4</span>
+            <button type="button" class="gpin" style="left:53%;top:56%">1</button>
+            <button type="button" class="gpin" style="left:61%;top:66%">2</button>
+            <button type="button" class="gpin" style="left:15%;top:77%">3</button>
+            <button type="button" class="gpin" style="left:64%;top:77%">4</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">touch_app</span> Tap an account</p>
@@ -133,6 +135,7 @@
               <li><span class="h">Import a statement</span> <span class="muted">as PDF, image or CSV; a preview shows what will be added.</span></li>
               <li><span class="h">Mark dormant</span> <span class="muted">to keep an old account on file but out of your totals.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -140,10 +143,10 @@
         <div class="gstep">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/10-accounts-loans.png" alt="Loans tab" loading="lazy" />
-            <span class="gpin" style="left:25%;top:28%">1</span>
-            <span class="gpin" style="left:15%;top:39%">2</span>
-            <span class="gpin" style="left:14%;top:62%">3</span>
-            <span class="gpin" style="left:38%;top:67%">4</span>
+            <button type="button" class="gpin" style="left:25%;top:28%">1</button>
+            <button type="button" class="gpin" style="left:15%;top:39%">2</button>
+            <button type="button" class="gpin" style="left:14%;top:62%">3</button>
+            <button type="button" class="gpin" style="left:38%;top:67%">4</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
@@ -155,6 +158,7 @@
               <li><span class="h">Payoff progress</span> <span class="muted">shows how far along you are and the payoff date.</span></li>
               <li><span class="h">Monthly, paid and principal</span> <span class="muted">for the full picture of each loan.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
       </section>
@@ -171,15 +175,15 @@
           <div class="gshots duo">
             <div class="gshot">
               <img src="assets/screenshots/guide/06-add-transaction.png" alt="Add transaction form" loading="lazy" />
-              <span class="gpin" style="left:22%;top:16%">1</span>
-              <span class="gpin" style="left:51%;top:26%">2</span>
-              <span class="gpin" style="left:30%;top:44%">3</span>
-              <span class="gpin" style="left:29%;top:52%">4</span>
-              <span class="gpin" style="left:36%;top:60%">5</span>
+              <button type="button" class="gpin" style="left:22%;top:16%">1</button>
+              <button type="button" class="gpin" style="left:51%;top:26%">2</button>
+              <button type="button" class="gpin" style="left:30%;top:44%">3</button>
+              <button type="button" class="gpin" style="left:29%;top:52%">4</button>
+              <button type="button" class="gpin" style="left:36%;top:60%">5</button>
             </div>
             <div class="gshot">
               <img src="assets/screenshots/guide/06b-category-grid.png" alt="Category picker" loading="lazy" />
-              <span class="gpin" style="left:17%;top:40%">6</span>
+              <button type="button" class="gpin" style="left:17%;top:40%">6</button>
             </div>
           </div>
           <div>
@@ -194,6 +198,7 @@
               <li><span class="h">Date, notes and split</span> <span class="muted">across accounts if you need them.</span></li>
               <li><span class="h">Pick a category</span> <span class="muted">from the grid, or search by name.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -202,14 +207,14 @@
           <div class="gshots duo">
             <div class="gshot">
               <img src="assets/screenshots/guide/07-ai-smart-transaction.png" alt="Smart entry text box" loading="lazy" />
-              <span class="gpin" style="left:36%;top:42%">1</span>
-              <span class="gpin" style="left:53%;top:57%">2</span>
+              <button type="button" class="gpin" style="left:36%;top:42%">1</button>
+              <button type="button" class="gpin" style="left:53%;top:57%">2</button>
             </div>
             <div class="gshot">
               <img src="assets/screenshots/guide/07b-ai-result.png" alt="Smart entry parsed result" loading="lazy" />
-              <span class="gpin" style="left:51%;top:58%">3</span>
-              <span class="gpin" style="left:32%;top:76%">4</span>
-              <span class="gpin" style="left:76%;top:91%">5</span>
+              <button type="button" class="gpin" style="left:51%;top:58%">3</button>
+              <button type="button" class="gpin" style="left:32%;top:76%">4</button>
+              <button type="button" class="gpin" style="left:76%;top:91%">5</button>
             </div>
           </div>
           <div>
@@ -223,6 +228,7 @@
               <li><span class="h">The category is inferred</span> <span class="muted">(here, &ldquo;taxi&rdquo; became Ride-hailing).</span></li>
               <li><span class="h">Check and save</span> <span class="muted">— or tap Edit text to tweak the wording.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
             <div class="gtip"><span class="material-symbols-rounded">offline_bolt</span><span>No connection? Smart entry has an on-device fallback, so it keeps working offline.</span></div>
           </div>
         </div>
@@ -231,10 +237,10 @@
         <div class="gstep">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/04-categories.png" alt="Categories" loading="lazy" />
-            <span class="gpin" style="left:30%;top:16%">1</span>
-            <span class="gpin" style="left:43%;top:23%">2</span>
-            <span class="gpin" style="left:81%;top:29%">3</span>
-            <span class="gpin" style="left:22%;top:48%">4</span>
+            <button type="button" class="gpin" style="left:30%;top:16%">1</button>
+            <button type="button" class="gpin" style="left:43%;top:23%">2</button>
+            <button type="button" class="gpin" style="left:81%;top:29%">3</button>
+            <button type="button" class="gpin" style="left:22%;top:48%">4</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">visibility</span> Organize</p>
@@ -246,6 +252,7 @@
               <li><span class="h">Drag to reorder</span> <span class="muted">or delete with the icons on each row.</span></li>
               <li><span class="h">Add a category</span> <span class="muted">to any group.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -253,10 +260,10 @@
         <div class="gstep rev">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/04b-category-editor.png" alt="Category editor" loading="lazy" />
-            <span class="gpin" style="left:33%;top:34%">1</span>
-            <span class="gpin" style="left:9%;top:39%">2</span>
-            <span class="gpin" style="left:47%;top:63%">3</span>
-            <span class="gpin" style="left:27%;top:80%">4</span>
+            <button type="button" class="gpin" style="left:33%;top:34%">1</button>
+            <button type="button" class="gpin" style="left:9%;top:39%">2</button>
+            <button type="button" class="gpin" style="left:47%;top:63%">3</button>
+            <button type="button" class="gpin" style="left:27%;top:80%">4</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">edit</span> Make it yours</p>
@@ -268,6 +275,7 @@
               <li><span class="h">Move it to another group,</span> <span class="muted">or create a new one.</span></li>
               <li><span class="h">Mark Essential or Discretionary</span> <span class="muted">— this powers the 50/30/20 view and your emergency runway.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -275,9 +283,9 @@
         <div class="gstep">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/13-search.png" alt="Searching transactions" loading="lazy" />
-            <span class="gpin" style="left:68%;top:9%">1</span>
-            <span class="gpin" style="left:82%;top:9%">2</span>
-            <span class="gpin" style="left:93%;top:9%">3</span>
+            <button type="button" class="gpin" style="left:68%;top:9%">1</button>
+            <button type="button" class="gpin" style="left:82%;top:9%">2</button>
+            <button type="button" class="gpin" style="left:93%;top:9%">3</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">search</span> Find &amp; fix</p>
@@ -288,6 +296,7 @@
               <li><span class="h">Filter</span> <span class="muted">by date range, category or account.</span></li>
               <li><span class="h">Clear</span> <span class="muted">to return to the full list.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
             <div class="gtip"><span class="material-symbols-rounded">undo</span><span>Long-press any row to select several and recategorize or delete them together. Made a mistake? An undo / redo control appears at the top after every change.</span></div>
           </div>
         </div>
@@ -304,11 +313,11 @@
         <div class="gstep">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/03c-budget-setup.png" alt="Setting up budgets" loading="lazy" />
-            <span class="gpin" style="left:50%;top:17%">1</span>
-            <span class="gpin" style="left:34%;top:26%">2</span>
-            <span class="gpin" style="left:78%;top:26%">3</span>
-            <span class="gpin" style="left:73%;top:46%">4</span>
-            <span class="gpin" style="left:89%;top:93%">5</span>
+            <button type="button" class="gpin" style="left:50%;top:17%">1</button>
+            <button type="button" class="gpin" style="left:34%;top:26%">2</button>
+            <button type="button" class="gpin" style="left:78%;top:26%">3</button>
+            <button type="button" class="gpin" style="left:73%;top:46%">4</button>
+            <button type="button" class="gpin" style="left:89%;top:93%">5</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">add_circle</span> Create</p>
@@ -321,6 +330,7 @@
               <li><span class="h">Fine-tune each cap</span> <span class="muted">— watch the &ldquo;allocated&rdquo; figure as you go.</span></li>
               <li><span class="h">Save.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -328,11 +338,11 @@
         <div class="gstep rev">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/03-budgets.png" alt="Budgets overview" loading="lazy" />
-            <span class="gpin" style="left:19%;top:16%">1</span>
-            <span class="gpin" style="left:18%;top:27%">2</span>
-            <span class="gpin" style="left:72%;top:24%">3</span>
-            <span class="gpin" style="left:61%;top:46%">4</span>
-            <span class="gpin" style="left:40%;top:76%">5</span>
+            <button type="button" class="gpin" style="left:19%;top:16%">1</button>
+            <button type="button" class="gpin" style="left:18%;top:27%">2</button>
+            <button type="button" class="gpin" style="left:72%;top:24%">3</button>
+            <button type="button" class="gpin" style="left:61%;top:46%">4</button>
+            <button type="button" class="gpin" style="left:40%;top:76%">5</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
@@ -345,6 +355,7 @@
               <li><span class="h">Daily pace</span> <span class="muted">shows what you're spending per day vs what's safe.</span></li>
               <li><span class="h">Filter chips</span> <span class="muted">jump to budgets to Watch or that are Over.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -352,10 +363,10 @@
         <div class="gstep">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/03b-budget-detail.png" alt="A single budget in detail" loading="lazy" />
-            <span class="gpin" style="left:82%;top:17%">1</span>
-            <span class="gpin" style="left:17%;top:24%">2</span>
-            <span class="gpin" style="left:48%;top:45%">3</span>
-            <span class="gpin" style="left:85%;top:93%">4</span>
+            <button type="button" class="gpin" style="left:82%;top:17%">1</button>
+            <button type="button" class="gpin" style="left:17%;top:24%">2</button>
+            <button type="button" class="gpin" style="left:48%;top:45%">3</button>
+            <button type="button" class="gpin" style="left:85%;top:93%">4</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">visibility</span> Drill in</p>
@@ -367,6 +378,7 @@
               <li><span class="h">Every payment</span> <span class="muted">lists its share of the cap.</span></li>
               <li><span class="h">Budget settings</span> <span class="muted">let unspent roll over, or carry overspend forward.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -374,10 +386,10 @@
         <div class="gstep rev">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/12b-bill-editor.png" alt="Declaring a bill" loading="lazy" />
-            <span class="gpin" style="left:12%;top:64%">1</span>
-            <span class="gpin" style="left:14%;top:73%">2</span>
-            <span class="gpin" style="left:13%;top:82%">3</span>
-            <span class="gpin" style="left:88%;top:92%">4</span>
+            <button type="button" class="gpin" style="left:12%;top:64%">1</button>
+            <button type="button" class="gpin" style="left:14%;top:73%">2</button>
+            <button type="button" class="gpin" style="left:13%;top:82%">3</button>
+            <button type="button" class="gpin" style="left:88%;top:92%">4</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">add_circle</span> Create</p>
@@ -389,6 +401,7 @@
               <li><span class="h">Due day</span> <span class="muted">— pick one, or let it follow your last payment.</span></li>
               <li><span class="h">Create the bill.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -396,10 +409,10 @@
         <div class="gstep">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/12-bills.png" alt="Bills overview" loading="lazy" />
-            <span class="gpin" style="left:10%;top:24%">1</span>
-            <span class="gpin" style="left:42%;top:25%">2</span>
-            <span class="gpin" style="left:84%;top:24%">3</span>
-            <span class="gpin" style="left:21%;top:82%">4</span>
+            <button type="button" class="gpin" style="left:10%;top:24%">1</button>
+            <button type="button" class="gpin" style="left:42%;top:25%">2</button>
+            <button type="button" class="gpin" style="left:84%;top:24%">3</button>
+            <button type="button" class="gpin" style="left:21%;top:82%">4</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
@@ -411,6 +424,7 @@
               <li><span class="h">What you actually paid,</span> <span class="muted">with history when you expand it.</span></li>
               <li><span class="h">Add more bills</span> <span class="muted">any time (Pro lifts the 5-bill limit).</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
       </section>
@@ -426,11 +440,11 @@
         <div class="gstep">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/11b-goal-create.png" alt="Creating a goal" loading="lazy" />
-            <span class="gpin" style="left:16%;top:38%">1</span>
-            <span class="gpin" style="left:38%;top:38%">2</span>
-            <span class="gpin" style="left:61%;top:38%">3</span>
-            <span class="gpin" style="left:83%;top:38%">4</span>
-            <span class="gpin" style="left:45%;top:62%">5</span>
+            <button type="button" class="gpin" style="left:16%;top:38%">1</button>
+            <button type="button" class="gpin" style="left:38%;top:38%">2</button>
+            <button type="button" class="gpin" style="left:61%;top:38%">3</button>
+            <button type="button" class="gpin" style="left:83%;top:38%">4</button>
+            <button type="button" class="gpin" style="left:45%;top:62%">5</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">add_circle</span> Create</p>
@@ -443,6 +457,7 @@
               <li><span class="h">Surplus</span> <span class="muted">— automatically bank whatever's left in your budget.</span></li>
               <li><span class="h">Set the target, linked account and date,</span> <span class="muted">then create.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -450,10 +465,10 @@
         <div class="gstep rev">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/11-goals.png" alt="Goals overview" loading="lazy" />
-            <span class="gpin" style="left:9%;top:22%">1</span>
-            <span class="gpin" style="left:22%;top:36%">2</span>
-            <span class="gpin" style="left:15%;top:42%">3</span>
-            <span class="gpin" style="left:85%;top:82%">4</span>
+            <button type="button" class="gpin" style="left:9%;top:22%">1</button>
+            <button type="button" class="gpin" style="left:22%;top:36%">2</button>
+            <button type="button" class="gpin" style="left:15%;top:42%">3</button>
+            <button type="button" class="gpin" style="left:85%;top:82%">4</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
@@ -465,6 +480,7 @@
               <li><span class="h">On-track guidance</span> <span class="muted">— what to save each month to hit it in time.</span></li>
               <li><span class="h">Add as many goals</span> <span class="muted">as you like.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -472,9 +488,9 @@
         <div class="gstep">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/01-transactions.png" alt="Smart Overview carousel" loading="lazy" />
-            <span class="gpin" style="left:20%;top:15%">1</span>
-            <span class="gpin" style="left:67%;top:16%">2</span>
-            <span class="gpin" style="left:12%;top:43%">3</span>
+            <button type="button" class="gpin" style="left:20%;top:15%">1</button>
+            <button type="button" class="gpin" style="left:67%;top:16%">2</button>
+            <button type="button" class="gpin" style="left:12%;top:43%">3</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">trending_up</span> Look ahead</p>
@@ -485,6 +501,7 @@
               <li><span class="h">Swipe through them;</span> <span class="muted">the very last tile opens the full grid.</span></li>
               <li><span class="h">Below, your transactions</span> <span class="muted">— tap to edit, long-press to select.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
           </div>
         </div>
 
@@ -492,11 +509,11 @@
         <div class="gstep rev">
           <div class="gshots"><div class="gshot">
             <img src="assets/screenshots/guide/08-all-insights.png" alt="All Insights grid" loading="lazy" />
-            <span class="gpin" style="left:18%;top:22%">1</span>
-            <span class="gpin" style="left:70%;top:22%">2</span>
-            <span class="gpin" style="left:16%;top:44%">3</span>
-            <span class="gpin" style="left:24%;top:65%">4</span>
-            <span class="gpin" style="left:67%;top:87%">5</span>
+            <button type="button" class="gpin" style="left:18%;top:22%">1</button>
+            <button type="button" class="gpin" style="left:70%;top:22%">2</button>
+            <button type="button" class="gpin" style="left:16%;top:44%">3</button>
+            <button type="button" class="gpin" style="left:24%;top:65%">4</button>
+            <button type="button" class="gpin" style="left:67%;top:87%">5</button>
           </div></div>
           <div>
             <p class="kicker"><span class="material-symbols-rounded">grid_view</span> Go deeper</p>
@@ -509,6 +526,7 @@
               <li><span class="h">Goal pace</span> <span class="muted">— what each goal needs from you.</span></li>
               <li><span class="h">Money lent out,</span> <span class="muted">tracked per person.</span></li>
             </ol>
+            <div class="gtour-nav"><button type="button" class="tplay" aria-label="Pause auto-play"><span class="material-symbols-rounded">pause</span> Auto</button><button type="button" class="tprev" aria-label="Previous step"><span class="material-symbols-rounded">arrow_back</span></button><span class="tcount"></span><button type="button" class="tnext" aria-label="Next step"><span class="material-symbols-rounded">arrow_forward</span></button></div>
             <div class="gtip"><span class="material-symbols-rounded">shield</span><span>Insights are built from summary numbers only — your raw transactions never leave the phone. Tap any card to ask the AI a follow-up question.</span></div>
           </div>
         </div>
@@ -533,5 +551,72 @@
       </div>
     </div>
   </footer>
+
+  <script>
+  /* Progressive enhancement only: the guide's text is all in the HTML above and
+     stays readable without JS. This adds emphasis + auto-advance on top. */
+  (function () {
+    document.body.classList.add('js-tour');
+    var INTERVAL = 3600;
+    var tours = [];
+
+    document.querySelectorAll('.gstep').forEach(function (step) {
+      var pins = Array.prototype.slice.call(step.querySelectorAll('.gpin'));
+      var notes = Array.prototype.slice.call(step.querySelectorAll('.gnotes > li'));
+      var nav = step.querySelector('.gtour-nav');
+      if (pins.length === 0 || pins.length !== notes.length || !nav) return;
+
+      var playBtn = nav.querySelector('.tplay');
+      var prevBtn = nav.querySelector('.tprev');
+      var nextBtn = nav.querySelector('.tnext');
+      var count = nav.querySelector('.tcount');
+      var cur = 0, timer = null, onScreen = false, hovered = false, paused = false;
+
+      function render() {
+        pins.forEach(function (p, k) { p.classList.toggle('is-active', k === cur); });
+        notes.forEach(function (n, k) { n.classList.toggle('is-active', k === cur); });
+        count.textContent = 'Step ' + (cur + 1) + ' of ' + pins.length;
+      }
+      function go(i) { cur = (i + pins.length) % pins.length; render(); }
+      function start() {
+        if (timer || paused || hovered || !onScreen) return;
+        timer = setInterval(function () { go(cur + 1); }, INTERVAL);
+      }
+      function stop() { if (timer) { clearInterval(timer); timer = null; } }
+      function restart() { stop(); start(); }
+      function setPaused(p) {
+        paused = p;
+        playBtn.querySelector('.material-symbols-rounded').textContent = p ? 'play_arrow' : 'pause';
+        playBtn.lastChild.textContent = p ? ' Play' : ' Auto';
+        playBtn.setAttribute('aria-label', p ? 'Resume auto-play' : 'Pause auto-play');
+        if (p) stop(); else restart();
+      }
+
+      pins.forEach(function (p, i) {
+        p.setAttribute('aria-label', 'Step ' + (i + 1) + ' of ' + pins.length);
+        p.addEventListener('click', function () { go(i); restart(); });
+      });
+      notes.forEach(function (n, i) { n.addEventListener('click', function () { go(i); restart(); }); });
+      prevBtn.addEventListener('click', function () { go(cur - 1); restart(); });
+      nextBtn.addEventListener('click', function () { go(cur + 1); restart(); });
+      playBtn.addEventListener('click', function () { setPaused(!paused); });
+      step.addEventListener('mouseenter', function () { hovered = true; stop(); });
+      step.addEventListener('mouseleave', function () { hovered = false; start(); });
+
+      tours.push(function () {
+        var r = step.getBoundingClientRect();
+        var vis = r.top < window.innerHeight * 0.85 && r.bottom > window.innerHeight * 0.15;
+        if (vis !== onScreen) { onScreen = vis; if (vis) start(); else stop(); }
+      });
+
+      render();
+    });
+
+    function updateAll() { tours.forEach(function (u) { u(); }); }
+    window.addEventListener('scroll', updateAll, { passive: true });
+    window.addEventListener('resize', updateAll);
+    updateAll();
+  })();
+  </script>
 </body>
 </html>

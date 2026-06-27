@@ -305,3 +305,36 @@ footer .muted { color:var(--on-surface-var); font-size:.86rem; margin:6px 0 0; }
   .gstep.rev .gshots { order:0; }
   .gshots { max-width:320px; margin:0 auto; }
 }
+
+/* ---------- interactive tour (progressive enhancement) ----------
+   All guide text lives in the static HTML and is NEVER display:none'd, so
+   search crawlers and no-JS readers get the full content. JS only adds
+   emphasis (glowing pin + highlighted note) and auto-advances the steps. */
+.gshots { position:relative; }
+.gpin { cursor:pointer; border:none; font-family:inherit; padding:0; }
+.js-tour .gpin { opacity:.4; transform:translate(-50%,-50%) scale(.8); transition:opacity .18s, transform .18s; }
+.js-tour .gpin.is-active { opacity:1; transform:translate(-50%,-50%) scale(1.18);
+  animation:gpulse 1.7s ease-out infinite; }
+@keyframes gpulse {
+  0% { box-shadow:0 0 0 3px var(--bg),0 0 0 6px color-mix(in srgb,var(--primary) 55%,transparent); }
+  70% { box-shadow:0 0 0 3px var(--bg),0 0 0 16px transparent; }
+  100% { box-shadow:0 0 0 3px var(--bg),0 0 0 16px transparent; }
+}
+
+/* the notes list stays fully visible; JS just emphasises the active step */
+.gnotes li { border-radius:12px; transition:opacity .25s, background .25s; }
+.js-tour .gnotes li { opacity:.55; cursor:pointer; padding-top:4px; padding-bottom:11px; margin-bottom:4px; }
+.js-tour .gnotes li.is-active { opacity:1; background:color-mix(in srgb,var(--primary) 9%,transparent); }
+.js-tour .gnotes li.is-active::before { box-shadow:0 0 0 4px color-mix(in srgb,var(--primary) 22%,transparent); }
+
+/* step controls (only meaningful with JS) */
+.gtour-nav { display:none; align-items:center; gap:10px; margin-top:20px; flex-wrap:wrap; }
+.js-tour .gtour-nav { display:flex; }
+.gtour-nav button { font-family:inherit; font-weight:600; font-size:.92rem; border:none; cursor:pointer;
+  padding:9px 16px; border-radius:999px; background:var(--secondary-container); color:var(--on-secondary-container);
+  display:inline-flex; align-items:center; gap:6px; }
+.gtour-nav button:hover { filter:brightness(.97); }
+.gtour-nav button.tplay { background:var(--primary); color:var(--on-primary); }
+.gtour-nav button .material-symbols-rounded { font-size:18px; }
+.gtour-nav .tcount { font-size:.88rem; color:var(--on-surface-var); font-weight:600; min-width:84px; text-align:center; }
+@media (prefers-reduced-motion: reduce) { .js-tour .gpin.is-active { animation:none; } }
