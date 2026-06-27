@@ -188,6 +188,12 @@ section { padding:72px 0; }
   font-variation-settings:'FILL' 1; }
 @media (prefers-color-scheme: dark) { .privacy-card li .material-symbols-rounded { color:#89F8C7; } }
 
+/* video */
+.video .sec-head { text-align:center; margin-left:auto; margin-right:auto; }
+.video-frame { max-width:900px; margin:0 auto; aspect-ratio:16/9; border-radius:28px; overflow:hidden;
+  background:var(--sc-high); border:1px solid var(--outline-variant); }
+.video-frame iframe { width:100%; height:100%; border:0; display:block; }
+
 /* screens */
 .screens { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
 .screens figure { margin:0; }
