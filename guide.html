@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guide | Paisafy</title>
+  <meta name="description" content="A hands-on guide to Paisafy: set up your accounts, record and organize spending, plan your month with budgets and bills, and reach your goals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#006C4C" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#191C1A" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="bar">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img class="logo-tile" src="assets/logo.png" alt="" /> Paisafy</a>
+      <nav>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#screens">Screens</a>
+        <a class="active" href="guide.html">Guide</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="doc guide">
+    <div class="wrap">
+      <h1>Getting started with Paisafy</h1>
+      <p class="updated">A hands-on walkthrough, screen by screen. Follow it in order to set everything up, or jump to the part you need. The numbered pins on each screenshot match the notes beside it.</p>
+
+      <div class="gtoc">
+        <a href="#j1"><span class="jnum">1</span><h3>Set up your accounts</h3><p>Add your accounts and read your balances and net worth.</p></a>
+        <a href="#j2"><span class="jnum">2</span><h3>Record &amp; organize spending</h3><p>Log transactions by hand or with AI, and keep categories tidy.</p></a>
+        <a href="#j3"><span class="jnum">3</span><h3>Plan your month</h3><p>Set budgets and declare the bills you pay each month.</p></a>
+        <a href="#j4"><span class="jnum">4</span><h3>Reach your goals</h3><p>Create goals and read the insights that look ahead.</p></a>
+      </div>
+
+      <!-- ================= JOURNEY 1 ================= -->
+      <section class="journey" id="j1">
+        <div class="journey-head">
+          <span class="jnum">1</span>
+          <div><h2>Set up your accounts</h2><p class="jlead">Accounts are the foundation. Once they're in, every balance, budget and insight is built from them.</p></div>
+        </div>
+
+        <!-- welcome -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot"><img src="assets/screenshots/guide/00-welcome.png" alt="Paisafy welcome screen" loading="lazy" /></div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">flag</span> Start here</p>
+            <h3>Open the app</h3>
+            <p class="intro">There's no sign-up and no account to create. On first launch you can jump straight into adding an account, set it up as a linked second device, or skip and explore. Everything you add stays on your phone.</p>
+            <div class="gtip"><span class="material-symbols-rounded">cloud_off</span><span>Nothing here needs an internet connection. Online features (AI, exchange rates, backups) are always optional.</span></div>
+          </div>
+        </div>
+
+        <!-- add account (duo) -->
+        <div class="gstep rev">
+          <div class="gshots duo">
+            <div class="gshot">
+              <img src="assets/screenshots/guide/09-add-account.png" alt="Choosing an account type" loading="lazy" />
+              <span class="gpin" style="left:27%;top:22%">1</span>
+              <span class="gpin" style="left:23%;top:62%">2</span>
+            </div>
+            <div class="gshot">
+              <img src="assets/screenshots/guide/09b-add-account-details.png" alt="Account details" loading="lazy" />
+              <span class="gpin" style="left:50%;top:29%">3</span>
+              <span class="gpin" style="left:28%;top:35%">4</span>
+              <span class="gpin" style="left:23%;top:51%">5</span>
+              <span class="gpin" style="left:24%;top:61%">6</span>
+            </div>
+          </div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">add_circle</span> Create</p>
+            <h3>Add your first account</h3>
+            <p class="intro">Tap <strong>Add account</strong> and walk through a short wizard. Step one picks the type; the rest fills in the details.</p>
+            <ol class="gnotes">
+              <li><span class="h">Pick the type.</span> <span class="muted">Checking, Savings, Cash, Credit Card, Investment and more. The type decides how the account behaves.</span></li>
+              <li><span class="h">Loans are special.</span> <span class="muted">A Loan or Mortgage tracks what you borrowed (or lent) and its payoff schedule.</span></li>
+              <li><span class="h">Name it</span> <span class="muted">so you recognize it in lists.</span></li>
+              <li><span class="h">Give it a colour</span> <span class="muted">to tell accounts apart at a glance.</span></li>
+              <li><span class="h">Currency.</span> <span class="muted">Each account can have its own; cross-currency totals convert automatically.</span></li>
+              <li><span class="h">Starting balance.</span> <span class="muted">Enter what's in it today (a calculator is built in). Savings and loans add an interest-rate step next.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- accounts overview -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/02-accounts.png" alt="Accounts overview" loading="lazy" />
+            <span class="gpin" style="left:27%;top:16%">1</span>
+            <span class="gpin" style="left:26%;top:28%">2</span>
+            <span class="gpin" style="left:50%;top:37%">3</span>
+            <span class="gpin" style="left:32%;top:48%">4</span>
+            <span class="gpin" style="left:85%;top:82%">5</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
+            <h3>The Accounts screen</h3>
+            <p class="intro">The middle tab in the bottom bar. It rolls all your accounts into one picture.</p>
+            <ol class="gnotes">
+              <li><span class="h">Accounts and Loans</span> <span class="muted">live on separate tabs.</span></li>
+              <li><span class="h">Total balance</span> <span class="muted">across everything, in your main currency.</span></li>
+              <li><span class="h">Assets, liabilities and net worth</span> <span class="muted">at a glance.</span></li>
+              <li><span class="h">Accounts group by type,</span> <span class="muted">each showing its live balance. Tap one for actions.</span></li>
+              <li><span class="h">Add another account</span> <span class="muted">any time with the + button.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- account actions -->
+        <div class="gstep rev">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/02b-account-actions.png" alt="Per-account actions" loading="lazy" />
+            <span class="gpin" style="left:53%;top:56%">1</span>
+            <span class="gpin" style="left:61%;top:66%">2</span>
+            <span class="gpin" style="left:15%;top:77%">3</span>
+            <span class="gpin" style="left:64%;top:77%">4</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">touch_app</span> Tap an account</p>
+            <h3>What you can do with an account</h3>
+            <p class="intro">Tapping an account opens its quick actions.</p>
+            <ol class="gnotes">
+              <li><span class="h">View transactions</span> <span class="muted">filtered to just this account.</span></li>
+              <li><span class="h">Reconcile</span> <span class="muted">to match the app's balance to your real statement in one tap.</span></li>
+              <li><span class="h">Import a statement</span> <span class="muted">as PDF, image or CSV; a preview shows what will be added.</span></li>
+              <li><span class="h">Mark dormant</span> <span class="muted">to keep an old account on file but out of your totals.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- loans -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/10-accounts-loans.png" alt="Loans tab" loading="lazy" />
+            <span class="gpin" style="left:25%;top:28%">1</span>
+            <span class="gpin" style="left:15%;top:39%">2</span>
+            <span class="gpin" style="left:14%;top:62%">3</span>
+            <span class="gpin" style="left:38%;top:67%">4</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
+            <h3>The Loans tab</h3>
+            <p class="intro">Loans get their own tab so they don't muddy your day-to-day balances.</p>
+            <ol class="gnotes">
+              <li><span class="h">Net loan position</span> <span class="muted">nets what you owe against what you're owed.</span></li>
+              <li><span class="h">You owe / owed to you / net</span> <span class="muted">split out clearly.</span></li>
+              <li><span class="h">Payoff progress</span> <span class="muted">shows how far along you are and the payoff date.</span></li>
+              <li><span class="h">Monthly, paid and principal</span> <span class="muted">for the full picture of each loan.</span></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= JOURNEY 2 ================= -->
+      <section class="journey" id="j2">
+        <div class="journey-head">
+          <span class="jnum">2</span>
+          <div><h2>Record &amp; organize spending</h2><p class="jlead">Log what you spend, however you like, and keep it tidy with categories.</p></div>
+        </div>
+
+        <!-- add transaction (duo) -->
+        <div class="gstep">
+          <div class="gshots duo">
+            <div class="gshot">
+              <img src="assets/screenshots/guide/06-add-transaction.png" alt="Add transaction form" loading="lazy" />
+              <span class="gpin" style="left:22%;top:16%">1</span>
+              <span class="gpin" style="left:51%;top:26%">2</span>
+              <span class="gpin" style="left:30%;top:44%">3</span>
+              <span class="gpin" style="left:29%;top:52%">4</span>
+              <span class="gpin" style="left:36%;top:60%">5</span>
+            </div>
+            <div class="gshot">
+              <img src="assets/screenshots/guide/06b-category-grid.png" alt="Category picker" loading="lazy" />
+              <span class="gpin" style="left:17%;top:40%">6</span>
+            </div>
+          </div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">add_circle</span> Create</p>
+            <h3>Add a transaction by hand</h3>
+            <p class="intro">Tap + on the Transactions tab. The same form handles money out, money in, and moves between your own accounts.</p>
+            <ol class="gnotes">
+              <li><span class="h">Expense, Income or Transfer</span> <span class="muted">at the top.</span></li>
+              <li><span class="h">Amount,</span> <span class="muted">with a built-in calculator for quick maths.</span></li>
+              <li><span class="h">Category</span> <span class="muted">— tap to open the picker.</span></li>
+              <li><span class="h">Account</span> <span class="muted">it came from (you can pin a default).</span></li>
+              <li><span class="h">Date, notes and split</span> <span class="muted">across accounts if you need them.</span></li>
+              <li><span class="h">Pick a category</span> <span class="muted">from the grid, or search by name.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- smart entry (duo) -->
+        <div class="gstep rev">
+          <div class="gshots duo">
+            <div class="gshot">
+              <img src="assets/screenshots/guide/07-ai-smart-transaction.png" alt="Smart entry text box" loading="lazy" />
+              <span class="gpin" style="left:36%;top:42%">1</span>
+              <span class="gpin" style="left:53%;top:57%">2</span>
+            </div>
+            <div class="gshot">
+              <img src="assets/screenshots/guide/07b-ai-result.png" alt="Smart entry parsed result" loading="lazy" />
+              <span class="gpin" style="left:51%;top:58%">3</span>
+              <span class="gpin" style="left:32%;top:76%">4</span>
+              <span class="gpin" style="left:76%;top:91%">5</span>
+            </div>
+          </div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">auto_awesome</span> Create with AI</p>
+            <h3>Or just type it in plain words</h3>
+            <p class="intro">Tap the ✨ button and describe the spend the way you'd say it. Paisafy reads it and fills the transaction in for you.</p>
+            <ol class="gnotes">
+              <li><span class="h">Type or paste anything</span> <span class="muted">— &ldquo;lunch 18 at Subway&rdquo;, or a whole bank SMS.</span></li>
+              <li><span class="h">Parse it.</span></li>
+              <li><span class="h">The amount is filled in</span> <span class="muted">from your text.</span></li>
+              <li><span class="h">The category is inferred</span> <span class="muted">(here, &ldquo;taxi&rdquo; became Ride-hailing).</span></li>
+              <li><span class="h">Check and save</span> <span class="muted">— or tap Edit text to tweak the wording.</span></li>
+            </ol>
+            <div class="gtip"><span class="material-symbols-rounded">offline_bolt</span><span>No connection? Smart entry has an on-device fallback, so it keeps working offline.</span></div>
+          </div>
+        </div>
+
+        <!-- categories -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/04-categories.png" alt="Categories" loading="lazy" />
+            <span class="gpin" style="left:30%;top:16%">1</span>
+            <span class="gpin" style="left:43%;top:23%">2</span>
+            <span class="gpin" style="left:81%;top:29%">3</span>
+            <span class="gpin" style="left:22%;top:48%">4</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">visibility</span> Organize</p>
+            <h3>Categories &amp; groups</h3>
+            <p class="intro">Open Categories from the Plan tab's top bar. Paisafy starts you with a sensible set you can shape however you like.</p>
+            <ol class="gnotes">
+              <li><span class="h">Expense and Income</span> <span class="muted">categories on separate tabs.</span></li>
+              <li><span class="h">Groups</span> <span class="muted">(like Food &amp; Drink) gather related categories.</span></li>
+              <li><span class="h">Drag to reorder</span> <span class="muted">or delete with the icons on each row.</span></li>
+              <li><span class="h">Add a category</span> <span class="muted">to any group.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- category editor -->
+        <div class="gstep rev">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/04b-category-editor.png" alt="Category editor" loading="lazy" />
+            <span class="gpin" style="left:33%;top:34%">1</span>
+            <span class="gpin" style="left:9%;top:39%">2</span>
+            <span class="gpin" style="left:47%;top:63%">3</span>
+            <span class="gpin" style="left:27%;top:80%">4</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">edit</span> Make it yours</p>
+            <h3>Editing a category</h3>
+            <p class="intro">Tap any category to open its editor.</p>
+            <ol class="gnotes">
+              <li><span class="h">Change the icon</span> <span class="muted">from the emoji picker.</span></li>
+              <li><span class="h">Pick a colour.</span></li>
+              <li><span class="h">Move it to another group,</span> <span class="muted">or create a new one.</span></li>
+              <li><span class="h">Mark Essential or Discretionary</span> <span class="muted">— this powers the 50/30/20 view and your emergency runway.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- search -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/13-search.png" alt="Searching transactions" loading="lazy" />
+            <span class="gpin" style="left:68%;top:9%">1</span>
+            <span class="gpin" style="left:82%;top:9%">2</span>
+            <span class="gpin" style="left:93%;top:9%">3</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">search</span> Find &amp; fix</p>
+            <h3>Search, filter and bulk edit</h3>
+            <p class="intro">From the Transactions tab you can quickly narrow the list down.</p>
+            <ol class="gnotes">
+              <li><span class="h">Search</span> <span class="muted">by title, note or category.</span></li>
+              <li><span class="h">Filter</span> <span class="muted">by date range, category or account.</span></li>
+              <li><span class="h">Clear</span> <span class="muted">to return to the full list.</span></li>
+            </ol>
+            <div class="gtip"><span class="material-symbols-rounded">undo</span><span>Long-press any row to select several and recategorize or delete them together. Made a mistake? An undo / redo control appears at the top after every change.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= JOURNEY 3 ================= -->
+      <section class="journey" id="j3">
+        <div class="journey-head">
+          <span class="jnum">3</span>
+          <div><h2>Plan your month</h2><p class="jlead">Set spending caps and tell Paisafy about your recurring bills, then let it keep score.</p></div>
+        </div>
+
+        <!-- set budgets -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/03c-budget-setup.png" alt="Setting up budgets" loading="lazy" />
+            <span class="gpin" style="left:50%;top:17%">1</span>
+            <span class="gpin" style="left:34%;top:26%">2</span>
+            <span class="gpin" style="left:78%;top:26%">3</span>
+            <span class="gpin" style="left:73%;top:46%">4</span>
+            <span class="gpin" style="left:89%;top:93%">5</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">add_circle</span> Create</p>
+            <h3>Set your budgets</h3>
+            <p class="intro">On the Plan tab's Budgets section, tap <strong>Edit budgets</strong> to allocate a cap to each category.</p>
+            <ol class="gnotes">
+              <li><span class="h">Choose the month</span> <span class="muted">you're budgeting for.</span></li>
+              <li><span class="h">Set a monthly total</span> <span class="muted">to budget against.</span></li>
+              <li><span class="h">Auto-distribute</span> <span class="muted">to split it across categories as a starting point.</span></li>
+              <li><span class="h">Fine-tune each cap</span> <span class="muted">— watch the &ldquo;allocated&rdquo; figure as you go.</span></li>
+              <li><span class="h">Save.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- budgets overview -->
+        <div class="gstep rev">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/03-budgets.png" alt="Budgets overview" loading="lazy" />
+            <span class="gpin" style="left:19%;top:16%">1</span>
+            <span class="gpin" style="left:18%;top:27%">2</span>
+            <span class="gpin" style="left:72%;top:24%">3</span>
+            <span class="gpin" style="left:61%;top:46%">4</span>
+            <span class="gpin" style="left:40%;top:76%">5</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
+            <h3>How the month is going</h3>
+            <p class="intro">The Budgets screen turns your caps into a live read on the month.</p>
+            <ol class="gnotes">
+              <li><span class="h">Budgets, Bills and Goals</span> <span class="muted">share this Plan tab.</span></li>
+              <li><span class="h">Spent vs budgeted</span> <span class="muted">for the whole month, with an over-budget warning.</span></li>
+              <li><span class="h">Switch the period</span> <span class="muted">between month, quarter and year.</span></li>
+              <li><span class="h">Daily pace</span> <span class="muted">shows what you're spending per day vs what's safe.</span></li>
+              <li><span class="h">Filter chips</span> <span class="muted">jump to budgets to Watch or that are Over.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- budget detail -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/03b-budget-detail.png" alt="A single budget in detail" loading="lazy" />
+            <span class="gpin" style="left:82%;top:17%">1</span>
+            <span class="gpin" style="left:17%;top:24%">2</span>
+            <span class="gpin" style="left:48%;top:45%">3</span>
+            <span class="gpin" style="left:85%;top:93%">4</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">visibility</span> Drill in</p>
+            <h3>One budget, in depth</h3>
+            <p class="intro">Tap any budget to see exactly what's driving it.</p>
+            <ol class="gnotes">
+              <li><span class="h">A clear over-cap badge</span> <span class="muted">when you've gone past the limit.</span></li>
+              <li><span class="h">Spent vs cap</span> <span class="muted">for this category.</span></li>
+              <li><span class="h">Every payment</span> <span class="muted">lists its share of the cap.</span></li>
+              <li><span class="h">Budget settings</span> <span class="muted">let unspent roll over, or carry overspend forward.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- declare a bill -->
+        <div class="gstep rev">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/12b-bill-editor.png" alt="Declaring a bill" loading="lazy" />
+            <span class="gpin" style="left:12%;top:64%">1</span>
+            <span class="gpin" style="left:14%;top:73%">2</span>
+            <span class="gpin" style="left:13%;top:82%">3</span>
+            <span class="gpin" style="left:88%;top:92%">4</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">add_circle</span> Create</p>
+            <h3>Declare a recurring bill</h3>
+            <p class="intro">On the Bills section, tap <strong>New bill</strong>. Paisafy then watches for the payment each month.</p>
+            <ol class="gnotes">
+              <li><span class="h">Title</span> <span class="muted">— matches payments with this exact title.</span></li>
+              <li><span class="h">Category</span> <span class="muted">it belongs to.</span></li>
+              <li><span class="h">Due day</span> <span class="muted">— pick one, or let it follow your last payment.</span></li>
+              <li><span class="h">Create the bill.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- bills overview -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/12-bills.png" alt="Bills overview" loading="lazy" />
+            <span class="gpin" style="left:10%;top:24%">1</span>
+            <span class="gpin" style="left:42%;top:25%">2</span>
+            <span class="gpin" style="left:84%;top:24%">3</span>
+            <span class="gpin" style="left:21%;top:82%">4</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
+            <h3>What's paid, what's due</h3>
+            <p class="intro">Bills automatically mark themselves paid when a matching payment lands.</p>
+            <ol class="gnotes">
+              <li><span class="h">Paid or not-paid-yet</span> <span class="muted">status on every bill.</span></li>
+              <li><span class="h">Category, typical amount and due day</span> <span class="muted">at a glance.</span></li>
+              <li><span class="h">What you actually paid,</span> <span class="muted">with history when you expand it.</span></li>
+              <li><span class="h">Add more bills</span> <span class="muted">any time (Pro lifts the 5-bill limit).</span></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= JOURNEY 4 ================= -->
+      <section class="journey" id="j4">
+        <div class="journey-head">
+          <span class="jnum">4</span>
+          <div><h2>Reach your goals</h2><p class="jlead">Set targets that matter, then let Paisafy's insights tell you where you're headed.</p></div>
+        </div>
+
+        <!-- create a goal -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/11b-goal-create.png" alt="Creating a goal" loading="lazy" />
+            <span class="gpin" style="left:16%;top:38%">1</span>
+            <span class="gpin" style="left:38%;top:38%">2</span>
+            <span class="gpin" style="left:61%;top:38%">3</span>
+            <span class="gpin" style="left:83%;top:38%">4</span>
+            <span class="gpin" style="left:45%;top:62%">5</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">add_circle</span> Create</p>
+            <h3>Create a goal</h3>
+            <p class="intro">On the Goals section, tap <strong>Add goal</strong> and pick the kind that fits.</p>
+            <ol class="gnotes">
+              <li><span class="h">Savings</span> <span class="muted">— save toward a target amount by a date.</span></li>
+              <li><span class="h">Milestone</span> <span class="muted">— track linked balances toward a one-off target.</span></li>
+              <li><span class="h">Spend cut</span> <span class="muted">— spend less than you did in a past window.</span></li>
+              <li><span class="h">Surplus</span> <span class="muted">— automatically bank whatever's left in your budget.</span></li>
+              <li><span class="h">Set the target, linked account and date,</span> <span class="muted">then create.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- goals overview -->
+        <div class="gstep rev">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/11-goals.png" alt="Goals overview" loading="lazy" />
+            <span class="gpin" style="left:9%;top:22%">1</span>
+            <span class="gpin" style="left:22%;top:36%">2</span>
+            <span class="gpin" style="left:15%;top:42%">3</span>
+            <span class="gpin" style="left:85%;top:82%">4</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">visibility</span> Read it</p>
+            <h3>Tracking your goals</h3>
+            <p class="intro">Goals group by type, each with a progress bar.</p>
+            <ol class="gnotes">
+              <li><span class="h">Each goal</span> <span class="muted">shows its name and type.</span></li>
+              <li><span class="h">Progress toward the target.</span></li>
+              <li><span class="h">On-track guidance</span> <span class="muted">— what to save each month to hit it in time.</span></li>
+              <li><span class="h">Add as many goals</span> <span class="muted">as you like.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- insights carousel -->
+        <div class="gstep">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/01-transactions.png" alt="Smart Overview carousel" loading="lazy" />
+            <span class="gpin" style="left:20%;top:15%">1</span>
+            <span class="gpin" style="left:67%;top:16%">2</span>
+            <span class="gpin" style="left:12%;top:43%">3</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">trending_up</span> Look ahead</p>
+            <h3>The Smart Overview</h3>
+            <p class="intro">At the top of the Transactions tab, Paisafy ranks a carousel of cards that read your money and project where it's headed.</p>
+            <ol class="gnotes">
+              <li><span class="h">Ranked insight cards</span> <span class="muted">— net worth, savings, bills, loans and more.</span></li>
+              <li><span class="h">Swipe through them;</span> <span class="muted">the very last tile opens the full grid.</span></li>
+              <li><span class="h">Below, your transactions</span> <span class="muted">— tap to edit, long-press to select.</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- all insights -->
+        <div class="gstep rev">
+          <div class="gshots"><div class="gshot">
+            <img src="assets/screenshots/guide/08-all-insights.png" alt="All Insights grid" loading="lazy" />
+            <span class="gpin" style="left:18%;top:22%">1</span>
+            <span class="gpin" style="left:70%;top:22%">2</span>
+            <span class="gpin" style="left:16%;top:44%">3</span>
+            <span class="gpin" style="left:24%;top:65%">4</span>
+            <span class="gpin" style="left:67%;top:87%">5</span>
+          </div></div>
+          <div>
+            <p class="kicker"><span class="material-symbols-rounded">grid_view</span> Go deeper</p>
+            <h3>All insights</h3>
+            <p class="intro">The full grid covers spending, savings, investments, bills and goals.</p>
+            <ol class="gnotes">
+              <li><span class="h">Net-worth trajectory</span> <span class="muted">over the year ahead.</span></li>
+              <li><span class="h">Investment growth</span> <span class="muted">projections.</span></li>
+              <li><span class="h">Passive-income coverage</span> <span class="muted">of your spending.</span></li>
+              <li><span class="h">Goal pace</span> <span class="muted">— what each goal needs from you.</span></li>
+              <li><span class="h">Money lent out,</span> <span class="muted">tracked per person.</span></li>
+            </ol>
+            <div class="gtip"><span class="material-symbols-rounded">shield</span><span>Insights are built from summary numbers only — your raw transactions never leave the phone. Tap any card to ask the AI a follow-up question.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <p>That's the core of Paisafy. Everything you add lives on your device, so explore freely — and if you get stuck, the <a href="faq.html">FAQ</a> covers privacy, backups, Pro and more.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <a class="brand" href="index.html"><img class="logo-tile" src="assets/logo.png" alt="" /> Paisafy</a>
+        <p class="muted">A privacy-first finance tracker by Doorway Labs.</p>
+      </div>
+      <div class="links">
+        <a href="guide.html">Guide</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:doorway.labs@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
