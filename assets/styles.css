@@ -87,6 +87,8 @@ a:hover { text-decoration:underline; }
 .btn-filled:hover { text-decoration:none; filter:brightness(1.06); }
 .btn-tonal { background:var(--secondary-container); color:var(--on-secondary-container); }
 .btn-tonal:hover { text-decoration:none; filter:brightness(.98); }
+.btn.soon { opacity:.6; cursor:default; }
+.btn.soon:hover { filter:none; }
 
 /* ---------- hero ---------- */
 .hero { padding:72px 0 64px; }
