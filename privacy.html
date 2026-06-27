@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Paisafy</title>
+  <title>Privacy Policy | Paisafy</title>
   <meta name="description" content="Paisafy's privacy policy: what data the app handles, where it lives, and when anything leaves your device." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,18 +38,18 @@
       <p class="lead-note">The short version: <strong>your financial data stays on your phone by default, and the only time information leaves the device is for features you explicitly use.</strong></p>
 
       <h2>1. Our approach to privacy</h2>
-      <p>Paisafy is <strong>offline-first and local-first</strong>. All of your accounts, transactions, transfers, budgets, bills, goals, categories, and settings are stored <strong>only on your device</strong> — in a local database (Room) and local preferences (DataStore).</p>
+      <p>Paisafy is <strong>offline-first and local-first</strong>. All of your accounts, transactions, transfers, budgets, bills, goals, categories, and settings are stored <strong>only on your device</strong>, in a local database (Room) and local preferences (DataStore).</p>
       <p><strong>Doorway Labs collects nothing.</strong> We do <strong>not</strong> operate a server that collects, stores, or syncs your financial records, there is no Paisafy account to create, and we have no access to your data. We do <strong>not</strong> sell or share your data, and we use none of it for advertising or analytics.</p>
-      <p>The only time information leaves your device is when <strong>you</strong> choose to use an optional feature that needs the network — for example asking the AI to parse a receipt, fetching exchange rates, or saving a backup to a folder you pick. In those cases the data goes directly to the relevant service to perform the task you asked for (a <strong>processor acting on your request</strong>, such as Google for AI parsing), never to us. These features and the data each one sends are described in Section 3. The app otherwise works fully offline.</p>
+      <p>The only time information leaves your device is when <strong>you</strong> choose to use an optional feature that needs the network, for example asking the AI to parse a receipt, fetching exchange rates, or saving a backup to a folder you pick. In those cases the data goes directly to the relevant service to perform the task you asked for (a <strong>processor acting on your request</strong>, such as Google for AI parsing), never to us. These features and the data each one sends are described in Section 3. The app otherwise works fully offline.</p>
 
       <hr />
 
       <h2>2. Data the app stores on your device</h2>
       <p>All of the following is created and stored locally by you, and never transmitted to us:</p>
       <ul>
-        <li><strong>Financial records</strong> — accounts (including type, currency, color, and balances), transactions, transfers, split payments, budgets, bills, goals, and categories.</li>
-        <li><strong>App settings</strong> — default currency, theme, pinned form defaults, feature toggles, and similar preferences.</li>
-        <li><strong>Ingestion audit trail</strong> — when you enable AI ingestion (Section 3), the app keeps a local log recording the outcome of each incoming SMS or notification, so you can see why it did or didn't create a transaction. Raw ingestion content is redacted in production builds.</li>
+        <li><strong>Financial records</strong>: accounts (including type, currency, color, and balances), transactions, transfers, split payments, budgets, bills, goals, and categories.</li>
+        <li><strong>App settings</strong>: default currency, theme, pinned form defaults, feature toggles, and similar preferences.</li>
+        <li><strong>Ingestion audit trail</strong>: when you enable AI ingestion (Section 3), the app keeps a local log recording the outcome of each incoming SMS or notification, so you can see why it did or didn't create a transaction. Raw ingestion content is redacted in production builds.</li>
       </ul>
       <p>You remain in control of this data and can delete it at any time from within the app, or by uninstalling the app.</p>
 
@@ -59,19 +59,19 @@
       <p>These features are <strong>off until you turn them on</strong> (or you only trigger them by an explicit action). Each one is the only reason data leaves your device.</p>
 
       <h3>3.1 AI parsing and insights (Google Gemini via Firebase AI Logic)</h3>
-      <p>When you use the app's AI features, certain content is sent to Google's Gemini models through <strong>Firebase AI Logic (Vertex AI)</strong> for processing. Google acts here as our <strong>service provider (data processor)</strong> — it processes this content solely to perform the task you requested and, per its Vertex AI terms, does not use it to train its models or for its own purposes. This applies to:</p>
+      <p>When you use the app's AI features, certain content is sent to Google's Gemini models through <strong>Firebase AI Logic (Vertex AI)</strong> for processing. Google acts here as our <strong>service provider (data processor)</strong>: it processes this content solely to perform the task you requested and, per its Vertex AI terms, does not use it to train its models or for its own purposes. This applies to:</p>
       <ul>
-        <li><strong>Smart entry</strong> — text you ask the app to parse into a transaction. <em>(An on-device regex fallback is used when offline or when AI is unavailable, and never leaves the device.)</em></li>
-        <li><strong>SMS / notification auto-add</strong> (Android only) — when you link a bank app or SMS sender to an account, the relevant payment message content may be sent for parsing and transfer classification.</li>
-        <li><strong>Receipt and statement import</strong> — receipt images, PDF/image/CSV bank statements, and the text they contain are uploaded for OCR and extraction. Encrypted PDFs are decrypted on-device first.</li>
-        <li><strong>AI Overview and chat</strong> — these are built from an <strong>aggregate-only financial snapshot</strong>. <strong>No raw transactions, account names, SMS content, or location data are included</strong> in the snapshot sent for the overview and chat features.</li>
+        <li><strong>Smart entry</strong>: text you ask the app to parse into a transaction. <em>(An on-device regex fallback is used when offline or when AI is unavailable, and never leaves the device.)</em></li>
+        <li><strong>SMS / notification auto-add</strong> (Android only): when you link a bank app or SMS sender to an account, the relevant payment message content may be sent for parsing and transfer classification.</li>
+        <li><strong>Receipt and statement import</strong>: receipt images, PDF/image/CSV bank statements, and the text they contain are uploaded for OCR and extraction. Encrypted PDFs are decrypted on-device first.</li>
+        <li><strong>AI Overview and chat</strong>: these are built from an <strong>aggregate-only financial snapshot</strong>. <strong>No raw transactions, account names, SMS content, or location data are included</strong> in the snapshot sent for the overview and chat features.</li>
       </ul>
-      <p>What this means: the analysis/overview features are designed so that <strong>only aggregated figures</strong> leave the device. The ingestion features (smart entry, SMS/notification parsing, receipt/statement OCR) necessarily send the specific content you are asking the app to parse. Because Google processes this content on our behalf as a service provider — not as an independent recipient — it is <strong>not data we share with a third party for their own use</strong>. This processing is governed by Google's data-handling terms for Firebase / Vertex AI. We do not store this content on any server of our own.</p>
+      <p>What this means: the analysis/overview features are designed so that <strong>only aggregated figures</strong> leave the device. The ingestion features (smart entry, SMS/notification parsing, receipt/statement OCR) necessarily send the specific content you are asking the app to parse. Because Google processes this content on our behalf as a service provider (not as an independent recipient), it is <strong>not data we share with a third party for their own use</strong>. This processing is governed by Google's data-handling terms for Firebase / Vertex AI. We do not store this content on any server of our own.</p>
 
       <h3>3.2 Currency and economic data</h3>
       <ul>
-        <li><strong>Exchange rates</strong> — the app fetches public, keyless USD-based FX rates from <code>open.er-api.com</code> to convert multi-currency totals. No personal or financial data is sent; only rate data is requested.</li>
-        <li><strong>Inflation / FX-erosion data</strong> — public economic data (e.g. World Bank) is fetched to power real-return insights. No personal data is sent.</li>
+        <li><strong>Exchange rates</strong>: the app fetches public, keyless USD-based FX rates from <code>open.er-api.com</code> to convert multi-currency totals. No personal or financial data is sent; only rate data is requested.</li>
+        <li><strong>Inflation / FX-erosion data</strong>: public economic data (e.g. World Bank) is fetched to power real-return insights. No personal data is sent.</li>
       </ul>
 
       <h3>3.3 Backup and restore</h3>
@@ -90,10 +90,10 @@
       <h2>4. Device permissions</h2>
       <p>The app requests permissions only to support specific features, and only on the platform where they apply:</p>
       <ul>
-        <li><strong>SMS / Notification access</strong> (Android only) — to read incoming payment messages for AI auto-add. Used only for accounts you explicitly link.</li>
-        <li><strong>Location (coarse, opt-in)</strong> — optionally attaches a recent, cached <strong>approximate</strong> location to AI-parsed entries. This is <strong>off by default</strong> and only used if you enable it. Location is stored locally with the transaction and is not sent to us.</li>
-        <li><strong>Storage / file access</strong> — to read statements/receipts you import and to write backups to the folder you select.</li>
-        <li><strong>Camera / photos</strong> — only when you choose to import or share a receipt image.</li>
+        <li><strong>SMS / Notification access</strong> (Android only): to read incoming payment messages for AI auto-add. Used only for accounts you explicitly link.</li>
+        <li><strong>Location (coarse, opt-in)</strong>: optionally attaches a recent, cached <strong>approximate</strong> location to AI-parsed entries. This is <strong>off by default</strong> and only used if you enable it. Location is stored locally with the transaction and is not sent to us.</li>
+        <li><strong>Storage / file access</strong>: to read statements/receipts you import and to write backups to the folder you select.</li>
+        <li><strong>Camera / photos</strong>: only when you choose to import or share a receipt image.</li>
       </ul>
       <p>You can revoke any permission at any time in your device settings; the related feature will simply stop working.</p>
 
@@ -103,20 +103,20 @@
       <p>We do not share your data with anyone for their own purposes. The services below come into play <strong>only when you use the optional feature that requires them</strong>, and they receive only the data needed to perform that specific task, under their own terms.</p>
       <p><strong>Service providers (processors acting on our behalf).</strong> These process data solely to perform a task you requested, not for their own purposes:</p>
       <ul>
-        <li><strong>Google (Firebase AI Logic / Vertex AI / Gemini)</strong> — AI parsing, OCR, and aggregate-based insights/chat. Per Google's Vertex AI terms, your content is not used to train its models.</li>
+        <li><strong>Google (Firebase AI Logic / Vertex AI / Gemini)</strong>: AI parsing, OCR, and aggregate-based insights/chat. Per Google's Vertex AI terms, your content is not used to train its models.</li>
       </ul>
       <p><strong>Independent providers (acting on their own account, under their own terms).</strong> These come into play only by your explicit action:</p>
       <ul>
-        <li><strong>Google Play Billing</strong> — processes a Pro purchase if you make one; we do not receive your payment details.</li>
-        <li><strong>Google Drive</strong> — stores your backup only if you choose a Drive folder as your backup destination.</li>
-        <li><strong>open.er-api.com</strong> and public economic-data sources (e.g. World Bank) — supply FX and inflation data; <strong>no personal or financial data is sent</strong> to them.</li>
+        <li><strong>Google Play Billing</strong>: processes a Pro purchase if you make one; we do not receive your payment details.</li>
+        <li><strong>Google Drive</strong>: stores your backup only if you choose a Drive folder as your backup destination.</li>
+        <li><strong>open.er-api.com</strong> and public economic-data sources (e.g. World Bank) supply FX and inflation data; <strong>no personal or financial data is sent</strong> to them.</li>
       </ul>
       <p>We do not sell your data, we do not share it with third parties for their own use, and we do not use it for advertising.</p>
 
       <hr />
 
       <h2 id="data-deletion">6. Data retention and deletion</h2>
-      <p>Because <strong>Paisafy</strong> (by <strong>Doorway Labs</strong>) stores your data only on your device and we never receive it, you delete your data directly — there is no account to close and no request to send us.</p>
+      <p>Because <strong>Paisafy</strong> (by <strong>Doorway Labs</strong>) stores your data only on your device and we never receive it, you delete your data directly. There is no account to close and no request to send us.</p>
 
       <h3>How to delete your data in the app</h3>
       <ol>
@@ -137,7 +137,7 @@
 
       <h3>What is kept, and for how long</h3>
       <ul>
-        <li><strong>Backup files you exported</strong> are <em>not</em> removed by in-app deletion or by uninstalling — they remain wherever you saved them (local storage or the Google Drive folder you chose) until <strong>you</strong> delete them there.</li>
+        <li><strong>Backup files you exported</strong> are <em>not</em> removed by in-app deletion or by uninstalling. They remain wherever you saved them (local storage or the Google Drive folder you chose) until <strong>you</strong> delete them there.</li>
         <li>Your <strong>Pro purchase</strong> is held by Google Play, not by us; it is tied to your Google account so the unlock can be restored, and is not deleted by clearing app data.</li>
         <li><strong>We retain nothing</strong>, because we never receive your data. Content you send to Google for optional AI processing is held only transiently to perform that task and is subject to Google's retention policies for Firebase / Vertex AI; it is not used to train Google's models.</li>
       </ul>
@@ -146,13 +146,13 @@
 
       <h2>7. Your rights under GDPR (EU / UK)</h2>
       <p>If you are in the European Economic Area or the United Kingdom, you have the rights of <strong>access, rectification, erasure, restriction, portability, and objection</strong> over your personal data, and the right to lodge a complaint with your local supervisory authority.</p>
-      <p>In practice, because your financial data is stored only on your device and we never receive it, you exercise most of these rights directly: you can view, edit, export (JSON backup), and delete your data at any time within the app, or erase it entirely by uninstalling. For the optional AI features, the <strong>legal basis</strong> for processing is your <strong>consent</strong>, given by choosing to enable and use them — you may withdraw that consent at any time by disabling the feature or revoking the related permission, with no effect on the rest of the app. For questions or any request we can assist with, contact us at the email in Section 12.</p>
+      <p>In practice, because your financial data is stored only on your device and we never receive it, you exercise most of these rights directly: you can view, edit, export (JSON backup), and delete your data at any time within the app, or erase it entirely by uninstalling. For the optional AI features, the <strong>legal basis</strong> for processing is your <strong>consent</strong>, given by choosing to enable and use them. You may withdraw that consent at any time by disabling the feature or revoking the related permission, with no effect on the rest of the app. For questions or any request we can assist with, contact us at the email in Section 12.</p>
 
       <hr />
 
       <h2>8. Your rights under the CCPA (California)</h2>
       <p>If you are a California resident, you have the right to <strong>know</strong> what personal information is collected and how it is used, to <strong>request deletion</strong>, and to <strong>not be discriminated against</strong> for exercising these rights.</p>
-      <p><strong>We do not sell or share your personal information</strong>, and we do not use it for cross-context behavioral advertising. We do not receive or store your financial data on our servers — it stays on your device under your control, where you can review and delete it directly. To make a request or ask a question, contact us at the email in Section 12.</p>
+      <p><strong>We do not sell or share your personal information</strong>, and we do not use it for cross-context behavioral advertising. We do not receive or store your financial data on our servers. It stays on your device under your control, where you can review and delete it directly. To make a request or ask a question, contact us at the email in Section 12.</p>
 
       <hr />
 
